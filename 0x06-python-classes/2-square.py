@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-#square class by Zeezbaba
+# square class by Zeezbaba
+"""Defines a square"""
+
 
 class Square:
     """Initializing square class"""
