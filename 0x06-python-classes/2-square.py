@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-# square class by Zeezbaba
-"""Defines a square"""
+# 2-square.py by Zeezbaba
+"""a module that defines a square"""
 
 
 class Square:
