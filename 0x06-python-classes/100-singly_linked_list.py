@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""module for a Node"""
+"""module for a Singly linked list"""
 
 
 class Node:
