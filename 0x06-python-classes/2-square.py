@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# 2-square.py by Zeezbaba
+# 0-square.py by Zeezbaba
 """This module defines a square"""
 
 
