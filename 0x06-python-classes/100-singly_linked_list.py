@@ -5,7 +5,7 @@
 class Node:
     """"defines a node"""
 
-    def __init__(self, data, next_node = None):
+    def __init__(self, data, next_node=None):
         """initializing the node with instance variables"""
 
         self.data = data
@@ -52,13 +52,13 @@ class SinglyLinkedList:
         self.head = None
 
     def __str__(self):
-        """create printable list"""
+        """make list printable"""
 
         printsll = ""
-        currentlocation = self.head
-        while currentlocation:
-            printsll += str(currentlocation.data) + "\n"
-            currentlocation = currentlocation.next_node
+        current = self.head
+        while current:
+            printsll += str(current.data) + "\n"
+            current = current.next_node
         return printsll[:-1]
 
     def sorted_insert(self, value):
@@ -66,17 +66,17 @@ class SinglyLinkedList:
         Args:
             value: what the value will be on the node
         """
-        new_node = Node(value)
+        new = Node(value)
         if not self.head:
-            self.head = new_node
+            self.head = new
             return
         if value < self.head.data:
-            new_node.next_node = self.head
-            self.head = new_node
+            new.next_node = self.head
+            self.head = new
             return
-        currentlocation = self.head
-        while currentlocation.next_node and currentlocation.next_node.data < value:
-            currentlocation = currentlocation.next_node
-        if currentlocation.next_node:
-            new_node.next_node = currentlocation.next_node
-        currentlocation.next_node = new_node
+        current = self.head
+        while current.next_node and current.next_node.data < value:
+            current = current.next_node
+        if current.next_node:
+            new.next_node = current.next_node
+        current.next_node = new
