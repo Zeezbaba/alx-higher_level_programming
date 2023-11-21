@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 # square class with attribute by Zeezbaba
+"""Defines a square"""
+
 
 class Square:
     """square class"""
