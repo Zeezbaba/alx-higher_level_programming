@@ -2,5 +2,6 @@
 #Zeezboss Square class
 """This class defines a square"""
 
+
 class Square:
     pass
