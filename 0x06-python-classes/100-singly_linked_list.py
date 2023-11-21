@@ -52,7 +52,7 @@ class SinglyLinkedList:
         self.head = None
 
     def __str__(self):
-        """create a printable list"""
+        """create printable list"""
 
         printsll = ""
         current_location = self.head
