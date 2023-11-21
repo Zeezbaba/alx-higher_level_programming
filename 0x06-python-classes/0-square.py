@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#Zeezboss Square class
+#0-square.py by Zeezbaba
 """This class defines a square"""
 
 
