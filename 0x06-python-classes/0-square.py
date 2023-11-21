@@ -4,5 +4,5 @@
 
 
 class Square:
-    """nothing"""
+    """nothing to do"""
     pass
