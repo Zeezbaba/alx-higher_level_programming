@@ -1,15 +1,15 @@
 #!/usr/bin/python3
-# 0-square.py by Zeezbaba
-"""A module that defines a square"""
+# 2-square.py by Zeezbaba
+"""This module defines a square"""
 
 
 class Square:
     """This class represent a square"""
 
     def __init__(self, size = 0):
-        """Initializing this square class
+        """Initializes the square class
         Args:
-            size: represent the size of the square defined
+            size: represent the size of the square given
         Raises:
             TypeError: if size is not integer
             ValueError: if size is less than zero
