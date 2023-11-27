@@ -8,7 +8,7 @@ class Rectangle:
     print_symbol = "#"
 
     def __init__(self, width=0, height=0):
-        """Initializes this rectangle class
+        """Defines the rectangle class
         Args:
             width: the width of the rectangle
             height: the height of the rectangle
@@ -63,10 +63,13 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ("")
         rectangle = ""
-        for column in range(self.__height):
-            for row in range(self.__width):
-                rectangle += "#"
-            if column < self.__height - 1:
+        for i in range(self.__height):
+            for j in range(self.__width):
+                try:
+                    rectangle += str(self.print_symbol)
+                except Exception:
+                    rectangle += type(self).print_symbol
+            if i < self.__height - 1:
                 rectangle += "\n"
         return (rectangle)
 
