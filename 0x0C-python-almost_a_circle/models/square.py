@@ -1,40 +1,39 @@
 #!/usr/bin/python3
-"""Module for a square class"""
+"""module that contains a square class"""
 
 from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
-    """a square class"""
+    """A square class"""
     def __init__(self, size, x=0, y=0, id=None):
-        """Initializes the square class"""
         self.size = size
         self.x = x
         self.y = y
-        self.id = id
+        self.id = None
         super().__init__(size, size, x, y, id)
 
     def __str__(self):
-        """string representation of a square"""
+        """format for the string representation of the class"""
         return f"[Square] ({self.id}) {self.x}/{self.y} - {self.size}"
 
     @property
     def size(self):
-        """gets value for size"""
+        """Gets the value of size"""
         return self.__width
 
     @size.setter
     def size(self, value):
-        """setx value for size"""
-        if not isinstance(value, int):
+        """Sets value for size"""
+        if type(value) is not int:
             raise TypeError("width must be an integer")
         if value <= 0:
-            raise ValueError("width must b > 0")
+            raise ValueError("width must be > 0")
         self.__width = value
         self.__height = value
 
     def update(self, *args, **kwargs):
-        """Update the attribute of the instances"""
+        """Updates attributes of the instance"""
 
         if args is not None and len(args) != 0:
             if len(args) >= 1:
@@ -61,9 +60,9 @@ class Square(Rectangle):
                     self.y = value
 
     def to_dictionary(self):
-        """returns the dictionary representation of a Square"""
+        """Returns the dictionary representation of a Square"""
 
-        square_dictionary = {'id': self.id, 'size': self.size, 'x': self.x,
-                'y': self.y}
+        rec_dictionary = {'id': self.id, 'size': self.size, 'x': self.x,
+                          'y': self.y}
 
-        return square_dictionary
+        return rec_dictionary
