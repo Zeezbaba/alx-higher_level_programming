@@ -15,7 +15,7 @@ class Rectangle(Base):
         self.y = y
         super().__init__(id)
 
-    # List of getter functions
+    # List all the getter functions
     @property
     def width(self):
         """Gets the value for width"""
@@ -36,11 +36,11 @@ class Rectangle(Base):
         """Gets the value for y"""
         return self.__y
 
-    # List of setter functions
+    # List all the setter functions
     @width.setter
     def width(self, value):
         """Sets the value for width"""
-        if (type(value) is not int):
+        if not isinstance(value, int):
             raise TypeError("width must be an integer")
 
         if value <= 0:
@@ -97,12 +97,12 @@ class Rectangle(Base):
             print()
 
     def __str__(self):
-        """Defines a format for the string representation of the class"""
+        """format for the string representation of the class"""
         return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - \
 {self.__width}/{self.__height}"
 
     def update(self, *args, **kwargs):
-        """Assigns an argument to each attribute"""
+        """Assigns argument to each attribute"""
 
         if args and len(args) != 0:
             a = 0
@@ -141,8 +141,8 @@ class Rectangle(Base):
     def to_dictionary(self):
         """Returns the dictionary representation of a Rectangle"""
 
-        obj_dictionary = {'id': self.id, 'width': self.__width,
+        rec_dictionary = {'id': self.id, 'width': self.__width,
                           'height': self.__height, 'x': self.__x,
                           'y': self.__y}
 
-        return obj_dictionary
+        return rec_dictionary
