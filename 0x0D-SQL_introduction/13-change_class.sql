@@ -2,4 +2,4 @@
 -- second_table of the database hbtn_0c_0 in your MySQL server.
 
 DELETE second_table
-WHERE score <= 5
+WHERE score <= 5;
