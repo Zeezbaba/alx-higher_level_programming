@@ -3,10 +3,7 @@
 -- Results must be sorted in ascending order by cities.id
 -- You can use only one SELECT statement
 
-SELECT
-	cities.id,
-	cities.name,
-	states.name
-	FROM cities
-	INNER JOIN states ON cities.states_id=states.id
-	ORDER BY cities.id;
+SELECT cities.id, cities.name, states.name
+FROM cities
+INNER JOIN states ON cities.states_id=states.id
+ORDER BY cities.id;
