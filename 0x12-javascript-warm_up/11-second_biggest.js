@@ -1,6 +1,6 @@
 #!/usr/bin/node
 function secondMax (integers) {
-    const arrangedInt = integers.sort(a, b) => b - a);
+   const arrangedInt = integers.sort((a, b) => b - a);
     return arrangedInt[1] || 0;
 }
 
