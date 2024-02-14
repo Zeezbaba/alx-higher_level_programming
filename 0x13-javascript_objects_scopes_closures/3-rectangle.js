@@ -9,7 +9,7 @@ class Rectangle {
   }
 
   print () {
-    if (w === 0 || h === 0) {
+    if (this.width === 0 || this.height === 0) {
       console.log('');
     } else {
       for (let i = 0; i < this.height; i++) {
