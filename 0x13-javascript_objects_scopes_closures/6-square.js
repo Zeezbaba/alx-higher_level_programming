@@ -12,7 +12,7 @@ class Square extends square {
       let j = 0;
       while (j < this.width) {
         myVar += myChar;
-        y++;
+        j++;
       }
 
       console.log(myVar);
