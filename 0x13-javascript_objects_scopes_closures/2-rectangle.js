@@ -5,9 +5,6 @@ class Rectangle {
     if (w > 0 && typeof w === 'number' && h > 0 && typeof h === 'number') {
       this.width = w;
       this.height = h;
-    } else {
-      this.width = 0;
-      this.height = 0;
     }
   }
 }
