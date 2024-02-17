@@ -16,7 +16,8 @@ if __name__ == '__main__':
 
     curs = db.cursor()
 
-    query = "SELECT * FROM states WHERE name LIKE 'N%' ORDER BY states.id"
+    query = "SELECT * FROM states WHERE name LIKE \
+            BINARY 'N%' ORDER BY states.id ASC"
     curs.execute(query)
 
     states = curs.fetchall()
