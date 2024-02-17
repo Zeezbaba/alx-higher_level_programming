@@ -24,5 +24,5 @@ if __name__ == '__main__':
 
     cities = curs.fetchall()
 
-    for city in cities:
-        print(city)
+    if cities is not None:
+        print(", ".join([city[1] for city in cities]))
